@@ -4,6 +4,3 @@ numpy
 scikit-learn
 pymango
 certifi
-
-
--e .
