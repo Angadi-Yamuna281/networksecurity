@@ -2,8 +2,13 @@ python-dotenv
 pandas
 numpy
 scikit-learn
-pymango
+
 certifi
+
+
+pymongo[src]==3.6
+
+
 
 
 -e .
