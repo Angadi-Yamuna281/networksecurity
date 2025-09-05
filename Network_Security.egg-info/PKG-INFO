@@ -9,6 +9,8 @@ Requires-Dist: numpy
 Requires-Dist: scikit-learn
 Requires-Dist: certifi
 Requires-Dist: pymongo[src]==3.6
+Requires-Dist: dill
+Requires-Dist: pyaml
 Dynamic: author
 Dynamic: author-email
 Dynamic: requires-dist

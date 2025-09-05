@@ -4,3 +4,5 @@ numpy
 scikit-learn
 certifi
 pymongo[src]==3.6
+dill
+pyaml
