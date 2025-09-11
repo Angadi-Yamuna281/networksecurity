@@ -25,4 +25,49 @@ def write_yaml_file(file_path: str, content: object, replace: bool=False):
             yaml.dump(content,file)
     except Exception as e:
         raise NetworkSecurityException(e, sys)
-          
+
+
+    
+def save_numpy_array(file_path: str, array: np.array):
+    """
+    Save numpy array data to file
+    """
+    try:
+        dir_path = os.path.dirname(file_path)
+        os.makedirs(dir_path, exist_ok=True)
+        with open(file_path,"wb") as file:
+            np.save(file, array)
+    except Exception as e:
+        raise NetworkSecurityException(e, sys)
+def save_object(file_path: str, obj: object):
+    """Save python objects to a pickle file."""
+    try:
+        dir_path = os.path.dirname(file_path)
+        os.makedirs(dir_path, exist_ok=True)
+        with open(file_path, "wb") as file:
+            pickle.dump(obj, file)
+        logging.info("Object saved in the file.")
+    except Exception as e:
+        raise NetworkSecurityException(e, sys)
+def load_object(file_path: str):
+    """Load python objects from a pickle file."""
+    try:
+        if not os.path.exists(file_path):
+            raise Exception(f"The file path {file_path} does not exist.")
+        with open(file_path,"rb") as file:
+            obj_file = pickle.load(file)
+            return obj_file
+    except Exception as e:
+        raise NetworkSecurityException(e, sys)
+    
+def load_numpy_array(file_path: str):
+    """Load numpy array data to a file"""
+    try:
+        if not os.path.exists(file_path):
+            raise Exception(f"The file path {file_path} does not exist.")
+        with open(file_path,"rb") as file:
+            array = np.load(file=file)
+            return array
+    except Exception as e:
+        raise NetworkSecurityException(e, sys)
+                  
