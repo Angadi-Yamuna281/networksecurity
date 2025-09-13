@@ -1,0 +1,93 @@
+Abnormal_URL:
+  drift_status: false
+  p_value: 1.0
+DNSRecord:
+  drift_status: false
+  p_value: 0.9999998134424841
+Domain_registeration_length:
+  drift_status: false
+  p_value: 0.7595437477553759
+Favicon:
+  drift_status: false
+  p_value: 0.84136934180281
+Google_Index:
+  drift_status: false
+  p_value: 0.9999999999999987
+HTTPS_token:
+  drift_status: false
+  p_value: 1.0
+Iframe:
+  drift_status: false
+  p_value: 0.9998663907258646
+Links_in_tags:
+  drift_status: false
+  p_value: 0.5441364404790828
+Links_pointing_to_page:
+  drift_status: false
+  p_value: 0.9623811195502571
+Page_Rank:
+  drift_status: false
+  p_value: 0.7622458428940937
+Prefix_Suffix:
+  drift_status: false
+  p_value: 0.9999999999999999
+Redirect:
+  drift_status: false
+  p_value: 0.996253874181789
+Request_URL:
+  drift_status: false
+  p_value: 1.0
+Result:
+  drift_status: false
+  p_value: 1.0
+RightClick:
+  drift_status: false
+  p_value: 0.9985410755345091
+SFH:
+  drift_status: false
+  p_value: 0.9999997127837107
+SSLfinal_State:
+  drift_status: false
+  p_value: 0.9999999999999456
+Shortining_Service:
+  drift_status: false
+  p_value: 1.0
+Statistical_report:
+  drift_status: false
+  p_value: 0.9856605693431174
+Submitting_to_email:
+  drift_status: false
+  p_value: 0.9434803783308514
+URL_Length:
+  drift_status: false
+  p_value: 0.9999999970722786
+URL_of_Anchor:
+  drift_status: false
+  p_value: 0.9999999928878193
+age_of_domain:
+  drift_status: false
+  p_value: 1.0
+double_slash_redirecting:
+  drift_status: false
+  p_value: 1.0
+having_At_Symbol:
+  drift_status: false
+  p_value: 0.9999999970722786
+having_IP_Address:
+  drift_status: false
+  p_value: 0.999999645816331
+having_Sub_Domain:
+  drift_status: false
+  p_value: 0.9982107902268093
+on_mouseover:
+  drift_status: false
+  p_value: 1.0
+popUpWidnow:
+  drift_status: false
+  p_value: 0.7014746128685367
+port:
+  drift_status: false
+  p_value: 0.9553818406486425
+web_traffic:
+  drift_status: false
+  p_value: 0.9844730340999357

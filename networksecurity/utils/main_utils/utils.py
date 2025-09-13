@@ -1,20 +1,19 @@
 import yaml
 from networksecurity.exception.exception import NetworkSecurityException
 from networksecurity.logging.logger import logging
-import os,sys
+import os, sys
+import dill
 import numpy as np
-#import dill
 import pickle
-
-
-
+from sklearn.metrics import accuracy_score
 
 def read_yaml_file(file_path: str) -> dict:
     try:
-        with open(file_path, "rb") as yaml_file:
-            return yaml.safe_load(yaml_file)
+        with open(file_path, "rb") as file:
+            return yaml.safe_load(file)
     except Exception as e:
-        raise NetworkSecurityException(e, sys) from e  
+        raise NetworkSecurityException(e, sys) 
+    
 def write_yaml_file(file_path: str, content: object, replace: bool=False):
     try:
         if replace:
@@ -25,8 +24,6 @@ def write_yaml_file(file_path: str, content: object, replace: bool=False):
             yaml.dump(content,file)
     except Exception as e:
         raise NetworkSecurityException(e, sys)
-
-
     
 def save_numpy_array(file_path: str, array: np.array):
     """
@@ -39,6 +36,7 @@ def save_numpy_array(file_path: str, array: np.array):
             np.save(file, array)
     except Exception as e:
         raise NetworkSecurityException(e, sys)
+
 def save_object(file_path: str, obj: object):
     """Save python objects to a pickle file."""
     try:
@@ -49,6 +47,7 @@ def save_object(file_path: str, obj: object):
         logging.info("Object saved in the file.")
     except Exception as e:
         raise NetworkSecurityException(e, sys)
+    
 def load_object(file_path: str):
     """Load python objects from a pickle file."""
     try:
@@ -70,4 +69,28 @@ def load_numpy_array(file_path: str):
             return array
     except Exception as e:
         raise NetworkSecurityException(e, sys)
-                  
+    
+def evaluate_model(x_train, y_train, x_test, y_test, models:dict):
+    try:
+        report = {}
+        trained_models = {}
+
+        for name,model in models.items():
+            classifier = model.fit(x_train, y_train)
+            y_train_pred = classifier.predict(x_train)
+            y_test_pred = classifier.predict(x_test)
+            train_model_score = accuracy_score(y_train, y_train_pred)
+            test_model_score = accuracy_score(y_test, y_test_pred)
+            report[name] = {
+                "train_accuracy":train_model_score,
+                "test_accuracy":test_model_score
+            }
+            trained_models[name] = classifier
+
+        best_model_name = max(report, key=lambda k: report[k]['test_accuracy'])
+        best_model = trained_models[best_model_name]
+
+        return best_model
+    
+    except Exception as e:
+        raise NetworkSecurityException(e, sys)

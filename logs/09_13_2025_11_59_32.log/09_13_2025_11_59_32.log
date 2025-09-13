@@ -1,0 +1,16 @@
+[2025-09-13 11:59:34,632] 17 root - INFO - Initiate Data Ingestion
+[2025-09-13 11:59:36,554] 65 root - INFO - Performed train test split on the dataframe
+[2025-09-13 11:59:36,554] 67 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[2025-09-13 11:59:36,555] 75 root - INFO - Exporting train and test file path.
+[2025-09-13 11:59:37,005] 84 root - INFO - Exported train and test file path.
+[2025-09-13 11:59:37,006] 19 root - INFO - Data Ingestion completed
+[2025-09-13 11:59:37,014] 23 root - INFO - Initiate data Validation
+[2025-09-13 11:59:37,191] 31 root - INFO - Required no of columns:2
+[2025-09-13 11:59:37,197] 32 root - INFO - Data Frame has columns:31
+[2025-09-13 11:59:37,197] 31 root - INFO - Required no of columns:2
+[2025-09-13 11:59:37,197] 32 root - INFO - Data Frame has columns:31
+[2025-09-13 11:59:38,028] 25 root - INFO - Data Validation completed
+[2025-09-13 11:59:38,028] 50 root - INFO - Data Transformation initiated
+[2025-09-13 11:59:38,216] 37 root - INFO - Creating the Data Transformation Pipeline.
+[2025-09-13 11:59:38,281] 65 root - INFO - Object saved at Artifacts\data_transformation\transformed_objects\preprocessing.pkl
+[2025-09-13 11:59:38,286] 29 root - INFO - Data Transformation Completed.

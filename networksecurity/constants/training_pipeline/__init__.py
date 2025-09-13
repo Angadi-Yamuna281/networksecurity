@@ -17,6 +17,8 @@ TEST_FILE_NAME: str = "test.csv"
 
 
 SCHEMA_FILE_PATH = os.path.join("data_schema", "schema.yaml")
+SAVED_MODEL_DIR = os.path.join("saved_models")
+MODEL_FILE_NAME = "model.pkl"
 
 
 
@@ -55,5 +57,12 @@ PREPROCESSING_FILE_NAME: str = "preprocessing.pkl"
 DATA_TRANSFORMATION_IMPUTER_PARAMS: dict = {"missing_values":np.nan,"n_neighbors":3,"weights":"uniform"} # KNN imputer to replace nan values
 
 
-
+"""
+Model Trainer related constants
+"""
+MODEL_TRAINER_DIRECTORY_NAME: str = "model_trainer"
+MODEL_TRAINER_TRAINER_MODEL_DIR: str = "trained_model"
+MODEL_FILE_NAME: str = "model.pkl"
+MODEL_TRAINER_EXPECTED_ACCURACY: float = 0.6
+MODEL_TRAINER_OVERFITTING_UNDERFITTING_THRESHOLD: float = 0.05
 

@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/angad/OneDrive/Documents/network/mlruns/0/97630b7430b545ab8923a3f179a429ec/artifacts
+end_time: 1757770932311
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 97630b7430b545ab8923a3f179a429ec
+run_name: placid-seal-213
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757770916537
+status: 3
+tags: []
+user_id: angad

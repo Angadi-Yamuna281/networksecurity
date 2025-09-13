@@ -79,13 +79,13 @@ class DataTransformation:
             save_object(self.data_transformation_config.transformed_object_file_path, preprocessor_obj)
 
             # Artifacts
-            data_transformation_artifacts = DataTransformationArtifacts(
+            data_transformation_artifact = DataTransformationArtifacts(
                 transformed_object_file_path = self.data_transformation_config.transformed_object_file_path,
                 transformed_train_file_path = self.data_transformation_config.transformed_train_file_path,
                 transformed_test_file_path = self.data_transformation_config.transformed_test_file_path
             )
 
-            return data_transformation_artifacts
+            return data_transformation_artifact
 
         except Exception as e:
             raise NetworkSecurityException(e, sys)

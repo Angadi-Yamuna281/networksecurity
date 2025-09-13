@@ -1,0 +1,23 @@
+[2025-09-13 11:19:46,502] 17 root - INFO - Initiate Data Ingestion
+[2025-09-13 11:19:48,280] 65 root - INFO - Performed train test split on the dataframe
+[2025-09-13 11:19:48,280] 67 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[2025-09-13 11:19:48,281] 75 root - INFO - Exporting train and test file path.
+[2025-09-13 11:19:48,651] 84 root - INFO - Exported train and test file path.
+[2025-09-13 11:19:48,654] 19 root - INFO - Data Ingestion completed
+[2025-09-13 11:19:48,662] 23 root - INFO - Initiate data Validation
+[2025-09-13 11:19:48,831] 31 root - INFO - Required no of columns:2
+[2025-09-13 11:19:48,833] 32 root - INFO - Data Frame has columns:31
+[2025-09-13 11:19:48,833] 31 root - INFO - Required no of columns:2
+[2025-09-13 11:19:48,833] 32 root - INFO - Data Frame has columns:31
+[2025-09-13 11:19:49,582] 25 root - INFO - Data Validation completed
+[2025-09-13 11:19:49,584] 50 root - INFO - Data Transformation initiated
+[2025-09-13 11:19:49,745] 37 root - INFO - Creating the Data Transformation Pipeline.
+[2025-09-13 11:19:49,804] 65 root - INFO - Object saved at Artifacts\data_transformation\transformed_objects\preprocessing.pkl
+[2025-09-13 11:19:49,808] 29 root - INFO - Data Transformation Completed.
+[2025-09-13 11:19:49,809] 84 root - INFO - Model Trainer Inititated
+[2025-09-13 11:19:49,837] 96 root - INFO - Model Training Started
+[2025-09-13 11:20:00,125] 105 root - INFO - Best model: Random Forest with test accuracy 0.9888
+[2025-09-13 11:20:07,098] 65 root - INFO - Object saved at Artifacts\model_trainer\trained_model\model.pkl
+[2025-09-13 11:20:07,121] 65 root - INFO - Object saved at final_models\model.pkl
+[2025-09-13 11:20:07,131] 65 root - INFO - Object saved at final_models\preprocessor.pkl
+[2025-09-13 11:20:07,133] 98 root - INFO - Model Training Completed

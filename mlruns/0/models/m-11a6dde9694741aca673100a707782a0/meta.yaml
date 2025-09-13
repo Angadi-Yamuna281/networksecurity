@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/angad/OneDrive/Documents/network/mlruns/0/models/m-11a6dde9694741aca673100a707782a0/artifacts
+creation_timestamp: 1757740488953
+experiment_id: '0'
+last_updated_timestamp: 1757740495230
+model_id: m-11a6dde9694741aca673100a707782a0
+model_type: null
+name: model
+source_run_id: 1545cde04c4d431090f5827ae150b6ed
+status: 2
+status_message: null
